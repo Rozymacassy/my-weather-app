@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="/Shecodes plus wk7/my-weather-app/script.js" />
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-box">
+            <div class="weather-top">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9 srch">
+                            <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                                autocomplete="off" />
+                        </div>
+                        <div class="col-3 submit">
+                            <input type="submit" value="Search" class="btn btn-primary w-100" />
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-6">
+                        <h2 id="city"></h2>
+                        <p>Last updated: <span id="date">Tuesday 20, 2022</span></p>
+
+                    </div>
+
+
+                    <div class="col-3 climate">
+                        <span id="feels_like"></span>⁰C
+                        <P class="weather-condition">Feels-like</P>
+                    </div>
+                    <div class="col-3 climate">
+                        <span id="wind"></span>mph
+                        <p class="weather-condition">Wind</p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-6 weather-temperature">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                            alt="Clear" id="icon" class="weather-icon" />
+                        <strong class="temperature" id="temperature"></strong><span class="units"><a href="#"
+                                id="celsius-link" class="active">°C</a> |
+                            <a href="#" id="fahrenheit-link">°F</a></span>
+                        <p id="description" class="description">Clear sky</p>
+                    </div>
+
+                    <div class="col-3 climate">
+                        <span id="pressure"></span> N/m<sup>2</sup>
+                        <P class="weather-condition">Pressure</P>
+                    </div>
+                    <div class="col-3 climate">
+                        <span id="humidity"></span>%
+                        <P class="weather-condition">Humidity</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-bottom">
+            <h2>Next 6 Days</h2>
+            <div class="row" id="forecast">
+                <div class="col-2 day-weather ">
+                    <h5 class="day">Wed</h5>
+                    <div class="weather-logo">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <p class="temp">12⁰</p>
+                </div>
+                <div class="col-2 day-weather">
+                    <h5 class="day">Thur</h5>
+                    <div class="weather-logo"> 
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" /></div>
+                    <p class="temp">7⁰</p>
+                </div>
+                <div class="col-2 day-weather">
+                    <h5 class="day">Fri</h5>
+                    <div class="weather-logo">  
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" /></div>
+                    <p class="temp">33⁰</p>
+                </div>
+                <div class="col-2 day-weather">
+                    <h5 class="day">Sat</h5>
+                    <div class="weather-logo">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <p class="temp">28⁰</p>
+                </div>
+                <div class="col-2 day-weather">
+                    <h5 class="day">Sun</h5>
+                    <div class="weather-logo">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <p class="temp">37⁰</p>
+                </div>
+                <div class="col-2 day-weather">
+                    <h5 class="day">Mon</h5>
+                    <div class="weather-logo">
+                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                        alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <p class="temp">10⁰</p>
+                </div>
+
+            </div>
+            <small
+            ><a
+              href="https://Rozymacassy.github.io/"
+              target="_blank"
+            >
+              Open-source code
+            </a>
+            by Nwachukwu Chinenye Rosemary</small
+          >
+        </div>
+
+    </div>
+
+    </div>
+    <script src="/Shecodes plus wk7//my-weather-app/script.js"></script>
+</body>
+
+</html>
