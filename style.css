@@ -17,12 +17,26 @@
     margin-left: 100px;
     line-height: 0;
 }
-/* .weather-temperature .img {
-margin-top: 0;
-padding-top: 0;
+h2, h4,#date, .units, .description{
+    opacity:0.8
+}
+h2, h4,.weather-condition, .update{
+font-weight: 500;
 
-} */
+}
 
 .day-weather{
     text-align: center;
+}
+
+.weather-forecast-temp{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.weather-forecast-temp-min{
+    opacity:0.5
+}
+.weather-forecast-day{
+    font-size:16px ;
+    opacity: 0.5;
 }

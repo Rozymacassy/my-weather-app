@@ -32,103 +32,147 @@
                 <div class="row">
                     <div class="col-6">
                         <h2 id="city"></h2>
-                        <p>Last updated: <span id="date">Tuesday 20, 2022</span></p>
+                        <p class="update">Last updated: <span id="date">Tuesday 20, 2022</span></p>
 
                     </div>
 
 
                     <div class="col-3 climate">
-                        <span id="feels_like"></span>⁰C
                         <P class="weather-condition">Feels-like</P>
+                        <span id="feels_like"></span><span class="units">⁰C</span> 
+
                     </div>
                     <div class="col-3 climate">
-                        <span id="wind"></span>mph
                         <p class="weather-condition">Wind</p>
+                        <span id="wind"></span><span class="units">mph</span>
+
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-6 weather-temperature">
-                        <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                            alt="Clear" id="icon" class="weather-icon" />
-                        <strong class="temperature" id="temperature"></strong><span class="units"><a href="#"
-                                id="celsius-link" class="active">°C</a> |
-                            <a href="#" id="fahrenheit-link">°F</a></span>
-                        <p id="description" class="description">Clear sky</p>
+             
+                    <div class="row">
+                        <div class="col-6 weather-temperature">
+                            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                                alt="Clear" id="icon" class="weather-icon" />
+                            <strong class="temperature" id="temperature"></strong><span class="units"><a href="#"
+                                    id="celsius-link" class="active">°C</a> |
+                                <a href="#" id="fahrenheit-link">°F</a></span>
+                            <p id="description" class="description">Clear sky</p>
+                        </div>
+
+                        <div class="col-3 climate">
+                            <P class="weather-condition">Pressure</P>
+                            <span id="pressure"></span><span class="units">N/m<sup>2</sup></span> 
+                        </div>
+                        <div class="col-3 climate">
+                            <span id="humidity"></span>
+                            <span class="units">%</span>
+                            <P class="weather-condition">Humidity</P>
+                        </div>
                     </div>
 
-                    <div class="col-3 climate">
-                        <span id="pressure"></span> N/m<sup>2</sup>
-                        <P class="weather-condition">Pressure</P>
-                    </div>
-                    <div class="col-3 climate">
-                        <span id="humidity"></span>%
-                        <P class="weather-condition">Humidity</P>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="weather-bottom">
-            <h2>Next 6 Days</h2>
+        <div class="weather-forecast">
+            <h4>Next 6 Days</h4>
             <div class="row" id="forecast">
                 <div class="col-2 day-weather ">
-                    <h5 class="day">Wed</h5>
+                    <div class="weather-forecast-day">Wed</div>
                     <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-night.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" />
+                            alt="Clear" id="weather-logo" class="weather-icon" />
                     </div>
-                    <p class="temp">12⁰</p>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2 day-weather">
-                    <h5 class="day">Thur</h5>
-                    <div class="weather-logo"> 
+                    <div class="weather-forecast-day">Thur</div>
+                    <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" /></div>
-                    <p class="temp">7⁰</p>
+                            alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2 day-weather">
-                    <h5 class="day">Fri</h5>
-                    <div class="weather-logo">  
+                    <div class="weather-forecast-day">Fri</div>
+                    <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" /></div>
-                    <p class="temp">33⁰</p>
+                            alt="Clear" id="weather-logo" class="weather-icon" />
+                    </div>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2 day-weather">
-                    <h5 class="day">Sat</h5>
+                    <div class="weather-forecast-day">Sat</div>
                     <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-night.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" />
+                            alt="Clear" id="weather-logo" class="weather-icon" />
                     </div>
-                    <p class="temp">28⁰</p>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2 day-weather">
-                    <h5 class="day">Sun</h5>
+                    <div class="weather-forecast-day">Sun</div>
                     <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" />
+                            alt="Clear" id="weather-logo" class="weather-icon" />
                     </div>
-                    <p class="temp">37⁰</p>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
                 <div class="col-2 day-weather">
-                    <h5 class="day">Mon</h5>
+                    <div class="weather-forecast-day">Mon</div>
                     <div class="weather-logo">
                         <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
-                        alt="Clear" id="weather-logo" class="weather-icon" />
+                            alt="Clear" id="weather-logo" class="weather-icon" />
                     </div>
-                    <p class="temp">10⁰</p>
+                    <div class="weather-forecast-temp">
+                        <span class="weather-forecast-temp-max">
+                            26⁰
+                        </span>
+                        <span class="weather-forecast-temp-min">
+                            12⁰
+                        </span>
+                    </div>
                 </div>
 
             </div>
-            <small
-            ><a
-              href="https://github.com/Rozymacassy/my-weather-app"
-              target="_blank"
-            >
-              Open-source code
-            </a>
-            by Nwachukwu Chinenye Rosemary</small
-          >
+            <small><a href="https://github.com/Rozymacassy/my-weather-app" target="_blank">
+                    Open-source code
+                </a>
+                by Nwachukwu Chinenye Rosemary</small>
         </div>
 
     </div>
