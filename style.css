@@ -1,11 +1,19 @@
+body{
+    background-color: black;
 
+}
+/* .weather-box{
+    margin: 30px;
+} */
 .container {
     background-color: rgba(220, 198, 241, 0.767);
     /* background-image: url(flower-bg.jpg); */
     /* opacity: 0.6; */
     margin-top: 20px;
-    box-shadow: 8px 8px 10px  rgba(220, 198, 241, 0.767),
-                -9px -9px 10px  rgba(220, 198, 241, 0.685);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 10px 10px 50px  rgba(197, 190, 204, 0.466),
+                -10px -10px 50px  rgba(220, 198, 241, 0.685);
 }
 
 .weather-temperature .temperature {
