@@ -66,10 +66,10 @@ console.log(response);
         <div class="weather-forecast-temp">
               <span class="weather-forecast-temp-max">
                   ${Math.round(forecastDay.temperature.maximum)}
-              </span>
+              </span>⁰
               <span class="weather-forecast-temp-min">
               ${Math.round(forecastDay.temperature.minimum)}
-              </span>
+              </span>⁰
          </div>
       </div>
     `;
