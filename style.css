@@ -1,19 +1,20 @@
-body{
-    background-color: black;
+body {
+    /* background-color: #e21309; */
+    /* background: rgb(2, 0, 36); */
+    background-image: url(/butterfly-bg.webp)}
 
-}
 /* .weather-box{
     margin: 30px;
 } */
 .container {
-    background-color: rgba(229, 204, 253, 0.747);
+    background-color:rgb(238, 182, 108);
     /* background-image: url(flower-bg.jpg); */
     /* opacity: 0.6; */
     margin-top: 20px;
     border-radius: 20px;
     padding: 20px;
-    box-shadow: 10px 10px 50px  rgba(197, 190, 204, 0.466),
-                -10px -10px 50px  rgba(220, 198, 241, 0.685);
+    box-shadow: 10px 10px 50px rgba(197, 190, 204, 0.466),
+        -10px -10px 50px rgba(220, 198, 241, 0.685);
 }
 
 .weather-temperature .temperature {
@@ -21,31 +22,46 @@ body{
     font-size: 55px;
     font-weight: 400;
 }
-.description{
+
+.description {
     margin-left: 100px;
     line-height: 0;
 }
-h2, h4,#date, .units, .description{
-    opacity:0.7;
+
+h2,
+h4,
+#date,
+.units,
+.description {
+    opacity: 0.7;
     color: red;
 }
-h2, h4,.weather-condition, .update{
-font-weight: 500;
+
+h2,
+h4,
+.weather-condition,
+.update {
+    font-weight: 500;
 
 }
 
-.day-weather{
+.day-weather {
     text-align: center;
 }
 
-.weather-forecast-temp{
+.weather-forecast-temp {
     font-size: 13px;
     margin-bottom: 20px;
 }
-.weather-forecast-temp-min{
-    opacity:0.7
+
+.weather-forecast-temp-min {
+    opacity: 0.7
 }
-.weather-forecast-day{
-    font-size:16px ;
+
+.weather-forecast-day {
+    font-size: 16px;
     opacity: 0.5;
+}
+.src-code{
+    color: rgb(240, 17, 17);
 }
